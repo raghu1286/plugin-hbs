@@ -1,8 +1,8 @@
 'use strict';
 
-import Handlebars from 'handlebars';
+var Handlebars = require('handlebars');
 
-const handlebarsRuntimePath = System.normalizeSync('handlebars/handlebars.runtime', __moduleName);
+var handlebarsRuntimePath = System.normalizeSync('handlebars/handlebars.runtime', __moduleName);
 
 export function translate(load) {
   var precompiled = Handlebars.precompile(load.source);
